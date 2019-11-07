@@ -1,0 +1,12 @@
+taille.RData
+============
+Ce fichier contient 4 vecteurs
+tailleG: vecteur contenant la taille en centimetres de tous les individus de sexe masculin.
+performanceG: vecteur contenant la meilleure de 3 performances (en centimetres) en saut en hauteur pour les individus de sexe masculin.
+eailleF: vecteur contenant la taille en centimetres de tous les individus de sexe f?minin.
+performanceF: vecteur contenant la meilleure de 3 performances (en centimetres) en saut en hauteur pour les individus de sexe f?minin.
+
+Pour charger le fichier
+> setwd("/Users/votrelogin/R/")
+> # On importe l'objet contenant les données
+> objets <- load("taille.RData")
