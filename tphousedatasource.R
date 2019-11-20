@@ -1,0 +1,8 @@
+house <- read.csv("house/house.csv",stringsAsFactors = FALSE,na.strings=c(NA,"-"))
+print(dim(house))
+print(head(res))
+res <- read.xlsx("house/house.xlsx", 1)
+print(dim(res))
+print(head(res))
+loyers = as.vector(house$loyer)
+surfaces = as.vector(house$surface)

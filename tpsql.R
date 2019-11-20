@@ -1,0 +1,10 @@
+library(DBI)
+con <- dbConnect(RSQLite::SQLite(), "house/house.db3")
+df = dbReadTable(con, "house")
+print(head(df))
+res = dbSendQuery(con, "select * from house where surface > 300")
+df = dbFetch(res)
+print(head(df))
+dbClearResult(res)
+dbDisconnect(con)
+
