@@ -12,7 +12,6 @@ wdbcTestLabels <- wdbc[428:569, 1]
 
 print(head(wdbcTest))
 
-k <- 9
 model <- randomForest(wdbcTraining,factor(wdbcTrainingLabels),wdbcTest,factor(wdbcTestLabels),ntree=100, keep.forest = T)
 print(model)
 pred = predict(model, wdbcTest)
